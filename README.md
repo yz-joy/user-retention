@@ -1,3 +1,24 @@
+# TL;DR
+(project goal, context, data, model, result)
+
+# Introduction
+## Motivation
+- A key to a company's growth is its **ability to keep customers** 
+  - Keeping existing customers is more cost efficient than acquiring new ones
+  - It speaks about brand attractiveness and customer experience 
+- In the context of e-commerce, i.e., non-subscription based business, customer retention = **repeated visits from the same customer**
+  -  Relevant questions to ask are how far apart visits need to be for a user to be considered as a returning user, and what events should be deemed as _visits_
+  -  It is worth noting that the answers to these questions, and even the definition of customer retention, can vary across businesses
+- Knowing if a customer will return is valuable
+  - Help to distinguish different types of shoppers and understand their needs
+  - Allow preemptive measures to prevent churns
+  - An effective way to evaluate if a marketing campaign or a sale event is successful
+
+
+## Case background
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/yz-joy/user-retention/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

@@ -17,19 +17,31 @@ TL;DR
   - An effective way to evaluate if a marketing campaign or a sale event is successful
 
 ## Case background
-- PrimeBuy Inc.
-  - Pseudonym of an online retailer of multi-category consumer goods
-- Data of user activities on PrimeBuy
+- The subject of study is an online retailer of multi-category consumer goods with a pseudonym *PrimeBuy*
+- Primary data is user activities on *PrimeBuy* 
   - Collected by [Open CDP](https://rees46.com/en/open-cdp) project and available on [Kaggle](https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store)
-  - Covers six months from Oct 2019 to Mar 2020
-
-- Focal interests of PrimeBuy:
+  - More details to be discussed below
+- Focal interests of study
   - How to measure customer retention of PrimeBuy
   - What can user activities tell about retention
   - Any value-adding opportunities and strategies
 
 ## Data
-  - User activity data for an online retailer of multi-category consumer goods
+- Activity level data with each row representing a user's activity (such as view) on a certain product and the corresponding timestamp
+- Restricted to user activities between Oct 2019 and Mar 2020. 286 million rows (44GB+)
+- Nine columns:
+  - *Event_time*: Timestamp of a user activity in UTC
+  - *Event_type*: Type of activities. Either view, cart, or purchase. About 94% are view, 4% cart and 2% purchase
+  - *Product_id*: Unique identifier of a product
+  - *Category_id*: Unique identifier of a category of products
+  - *Category_code*: Category name if available. About 24% are missing, 16% smartphone
+  - *Brand*: Brand name of a product if available. About 13% are missing
+  - *Price*: Product price. Average product price is $174
+  - *User_id*: Unique identifier of a user
+  - *User_session*: Temporary user session ID. Will change whenever users switch devices, log off and on, or have a long pause in activities
+
+![Data screenshot](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "PrimeBuy user activity data")
+
 
 
 

@@ -1,7 +1,9 @@
-# TL;DR
+# Customer Retention Prediction
+TL;DR
 (project goal, context, data, model, result)
 
 # Introduction
+
 ## Motivation
 - A key to a company's growth is its **ability to keep customers** 
   - Keeping existing customers is more cost efficient than acquiring new ones
@@ -14,8 +16,21 @@
   - Allow preemptive measures to prevent churns
   - An effective way to evaluate if a marketing campaign or a sale event is successful
 
-
 ## Case background
+- PrimeBuy Inc.
+  - Pseudonym of an online retailer of multi-category consumer goods
+- Data of user activities on PrimeBuy
+  - Collected by [Open CDP](https://rees46.com/en/open-cdp) project and available on [Kaggle](https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store)
+  - Covers six months from Oct 2019 to Mar 2020
+
+- Focal interests of PrimeBuy:
+  - How to measure customer retention of PrimeBuy
+  - What can user activities tell about retention
+  - Any value-adding opportunities and strategies
+
+## Data
+  - User activity data for an online retailer of multi-category consumer goods
+
 
 
 

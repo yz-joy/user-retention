@@ -18,12 +18,12 @@ TL;DR
 
 ## Case background
 - The subject of study is an online retailer of multi-category consumer goods with a pseudonym *PrimeBuy*
-- Primary data is user activities on *PrimeBuy* 
+- Primary data is user activities on PrimeBuy 
   - Collected by [Open CDP](https://rees46.com/en/open-cdp) project and available on [Kaggle](https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store)
   - More details to be discussed below
 - Focal interests of study
   - How to measure customer retention of PrimeBuy
-  - What can user activities tell about retention
+  - What can customer activities tell about retention
   - Any value-adding opportunities and strategies
 
 ## Data
@@ -34,52 +34,22 @@ TL;DR
   - *Event_type*: Type of activities. Either view, cart, or purchase. About 94% are view, 4% cart and 2% purchase
   - *Product_id*: Unique identifier of a product
   - *Category_id*: Unique identifier of a category of products
-  - *Category_code*: Category name if available. About 24% are missing, 16% smartphone
+  - *Category_code*: Category name if available. About 24% are missing. Most popular non-missing category is electronics-smartphone (16%)
   - *Brand*: Brand name of a product if available. About 13% are missing
   - *Price*: Product price. Average product price is $174
   - *User_id*: Unique identifier of a user
-  - *User_session*: Temporary user session ID. Will change whenever users switch devices, log off and on, or have a long pause in activities
+  - *User_session*: Temporary user session ID. Will change whenever users switch devices, log off and on, or have a long pause between activities
 
-![Data screenshot](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "PrimeBuy user activity data")
+![Data screenshot](Presentation/dataSnapshot.png "Snapshot of PrimeBuy user activity data")
 
+## Objective
+The model objective is formulated as:   
 
+_**Predict if customers who visited in 2019 Q4 would also visit in 2020 Q1**_
 
+- Using the quarterly interval to discuss customer retention better suits the business nature of PrimeBuy whose products are mainly slow-moving and seasonal electonics and appliances
+- _Visit_ comprises all user activities, i.e. view, cart, and purchase. It is not restricted to purchase only because:
+  - From the data perspective, only a tiny portion of activities are purchase, and no enough information about why the conversion is so low from view to buy. It could be due to a long time gap, uncompetitive prices, or other reasons. Restricting to purchase only could distort the analysis
+  - From the business perspective, looking at all activities tells about brand awareness and customer activeness which generates more long-term benefits than purchases alone
+- Because 2019 Q4 is also holiday season, this study can also serve as a retrospective analysis on the effectiveness of holiday promotions if any
 
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/yz-joy/user-retention/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yz-joy/user-retention/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
